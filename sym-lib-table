@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SN74HC595DR)(type Legacy)(uri /home/michaelpollind/project/keychain_game/SN74HC595DR.lib)(options "")(descr ""))
+)
