@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Atmel_ATTINY:ATTINY13A-MU U3
-U 1 1 5B7E44F0
-P 4650 4400
-F 0 "U3" H 4650 4917 50  0000 C CNN
-F 1 "ATTINY13A-MU" H 4650 4826 50  0000 C CNN
-F 2 "QFN_MLF20" H 5300 4400 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 3850 4750 50  0001 C CNN
-	1    4650 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+2V5 #PWR0101
 U 1 1 5B7E46A7
 P 5650 4150
@@ -48,12 +37,12 @@ F 3 "" H 5650 4650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SN74HC595DR:SN74HC595DR U2
+L keychain_game-rescue:SN74HC595DR-SN74HC595DR U2
 U 1 1 5B7E54FD
 P 4100 2250
 F 0 "U2" H 4100 3020 50  0000 C CNN
 F 1 "SN74HC595DR" H 4100 2929 50  0000 C CNN
-F 2 "SOIC127P600X175-16N" H 4100 2250 50  0001 L BNN
+F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 4100 2250 50  0001 L BNN
 F 3 "Texas Instruments" H 4100 2250 50  0001 L BNN
 F 4 "SOIC-16 Texas Instruments" H 4100 2250 50  0001 L BNN "Field4"
 F 5 "https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595DR/296-14857-1-ND/562567?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4100 2250 50  0001 L BNN "Field5"
@@ -421,7 +410,7 @@ U 1 1 5B7E6D36
 P 4000 5100
 F 0 "J1" H 4050 5417 50  0000 C CNN
 F 1 "Conn_02x03_Counter_Clockwise" H 4050 5326 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4000 5100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4000 5100 50  0001 C CNN
 F 3 "~" H 4000 5100 50  0001 C CNN
 	1    4000 5100
 	1    0    0    -1  
@@ -454,7 +443,7 @@ U 1 1 5B7E7332
 P 2000 4750
 F 0 "SW1" V 2046 4702 50  0000 R CNN
 F 1 "SW_MEC_5G" V 1955 4702 50  0000 R CNN
-F 2 "Buttons_Switches_SMD:SW_MEC_5GSH9" H 2000 4950 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2000 4950 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 2000 4950 50  0001 C CNN
 	1    2000 4750
 	0    -1   -1   0   
@@ -564,7 +553,7 @@ SCK
 Text GLabel 3800 5200 0    50   Input ~ 0
 RESET
 $Comp
-L Regulator_Linear:MIC5205-2.5 U1
+L keychain_game-rescue:MIC5205-2.5-Regulator_Linear U1
 U 1 1 5B7EA4B7
 P 1950 1250
 F 0 "U1" H 1950 1592 50  0000 C CNN
@@ -645,9 +634,6 @@ F 3 "" H 5650 5100 50  0001 C CNN
 	1    5650 5100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5650 4650 5650 4900
-Connection ~ 5650 4650
 $Comp
 L Device:CP1 C1
 U 1 1 5B7EF1CE
@@ -746,5 +732,19 @@ F 2 "" H 1500 2200 50  0001 C CNN
 F 3 "" H 1500 2200 50  0001 C CNN
 	1    1500 2200
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 4650 5650 4900
+Connection ~ 5650 4650
+$Comp
+L atmel:ATTINY13A-MMF U4
+U 1 1 5B8A0656
+P 4650 4400
+F 0 "U4" H 4650 4917 50  0000 C CNN
+F 1 "ATTINY13A-MMF" H 4650 4826 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.55x2.48mm" H 5250 4400 50  0001 C CIN
+F 3 "http://www.atmel.com/Images/doc8126.pdf" H 3850 4750 50  0001 C CNN
+	1    4650 4400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
