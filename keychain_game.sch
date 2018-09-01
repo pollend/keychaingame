@@ -398,9 +398,9 @@ Text GLabel 3400 2150 0    50   Input ~ 0
 SRCLK
 Text GLabel 3400 2050 0    50   Input ~ 0
 RCLK
-Text GLabel 1900 4350 0    50   Input ~ 0
-RCLK
 Text GLabel 1900 4250 0    50   Input ~ 0
+RCLK
+Text GLabel 1900 4350 0    50   Input ~ 0
 SRCLK
 Text GLabel 1900 4150 0    50   Input ~ 0
 SER
@@ -435,17 +435,6 @@ F 1 "+2V5" V 1615 4678 50  0000 L CNN
 F 2 "" H 1600 4550 50  0001 C CNN
 F 3 "" H 1600 4550 50  0001 C CNN
 	1    1600 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 5B7E7332
-P 2000 4750
-F 0 "SW1" V 2046 4702 50  0000 R CNN
-F 1 "SW_MEC_5G" V 1955 4702 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2000 4950 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 2000 4950 50  0001 C CNN
-	1    2000 4750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -746,5 +735,16 @@ F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.55x2.48mm" H 5250 4400 50  0001
 F 3 "http://www.atmel.com/Images/doc8126.pdf" H 3850 4750 50  0001 C CNN
 	1    4650 4400
 	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW2
+U 1 1 5B8A0B61
+P 2000 4750
+F 0 "SW2" V 1954 4848 50  0000 L CNN
+F 1 "SW_DPST_x2" V 2045 4848 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2000 4750 50  0001 C CNN
+F 3 "" H 2000 4750 50  0001 C CNN
+	1    2000 4750
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
