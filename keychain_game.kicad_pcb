@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-01acc0d~66~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-0109641~66~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
@@ -1295,7 +1295,7 @@
     )
   )
 
-  (gr_circle (center 149.0773 92.406) (end 154.1573 80.214) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 148.9503 92.406) (end 154.0303 80.214) (layer Edge.Cuts) (width 0.05))
 
   (via (at 142.8115 93.4745) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (status 30))
   (segment (start 143.5915 93.4745) (end 142.8115 93.4745) (width 0.25) (layer B.Cu) (net 1))
